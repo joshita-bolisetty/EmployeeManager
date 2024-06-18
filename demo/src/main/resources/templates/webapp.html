@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App in Spring Boot with Spring Security</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .subtitle {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.5s, color 0.5s;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: changeColor 10s infinite;
+            color: white;
+        }
+        @keyframes changeColor {
+            0% { background-color: red; }
+            10% { background-color: orange; }
+            20% { background-color: yellow; }
+            30% { background-color: #7FFF00; } /* Light Green */
+            40% { background-color: #006400; } /* Dark Green */
+            50% { background-color: #7EB4EA; } /* Light Blue */
+            60% { background-color: #00008B; } /* Dark Blue */
+            70% { background-color: purple; }
+            80% { background-color: pink; }
+            90% { background-color: red; }
+            100% { background-color: orange; }
+        }
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Web App in Spring Boot with Spring Security</div>
+    <div class="subtitle">- by Joshita</div>
+    <div style="margin-bottom: 50px;"></div> 
+    <a href="/login" class="button">Explore <span class="arrow"></span></a>
+    <script src="webapp.js"></script>
+</body>
+</html>
